@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.4.1/dist/sweetalert2.min.css">
+</head>
+<body onload="render()">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success text-white ">
+        <a class="text-white navbar-brand" href="#">
+            <i class="fab fa-pagelines">Gold Baby Store</i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto menu">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#jacket">Jackets</a>
+
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#shoes">Shoes</a>
+
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#jeans">Salads</a>
+
+                </li>
+
+
+
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <a  class="text-white nav-link" href="cart.html">
+                    <i class="text-warning fas fa-shopping-cart"></i>Shopping Cart<i style="color: yellow;" id="cart_n"></i>
+                </a>
+                <a class="nav-link disabled text-white" href="admin/login.html">
+                    <i class="far fa-user"></i>Administrator
+
+                </a>
+            </form>
+        </div>
+
+
+
+    </nav>
+</header>
+<div class="container mt-3">
+    <main role="main">
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive-sm">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </main>
+</div>
+
+<footer class="container">
+    <p class="float-right">
+        <a href="#">Top</a>
+    </p>
+    <div class="row">
+        Bakkeldi Orozbekov
+    </div>
+</footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase.js"></script>
+
+<script src="js/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+</body>
+</html>

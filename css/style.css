@@ -1,0 +1,15 @@
+.imgFilter{
+    filter: brightness(0.80);
+}
+.background1{
+    background: snow;
+}
+footer{
+    background-color: #0b2e13;
+}
+.bgColor{
+    background-color: #b3d7ff;
+}
+.bgColorOrder{
+    background-color: #c3e6cb;
+}
